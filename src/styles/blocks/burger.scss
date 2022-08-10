@@ -1,0 +1,48 @@
+.burger{
+    width: 24px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: #009EFF;
+    position: relative;
+    padding: 0;
+    & span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #323941;
+    }
+    &::before{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #323941;
+    }
+    &::after{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #323941;
+    }
+    &.open{
+        & span{
+            display: none;
+        }
+        &::before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &::after{
+            transform: rotate(130deg);
+            bottom: 9px;
+        }
+    }
+}

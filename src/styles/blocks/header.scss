@@ -1,0 +1,29 @@
+.header{
+    padding: 10px 0;
+    & .container{
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    & .header__nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+    }
+    & .header__icons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    & .header__icon{
+        /* & svg{
+            fill: #fff;   
+        } */
+    }
+    & .logo{
+        margin-left: 13%;
+    }
+}

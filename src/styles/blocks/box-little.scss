@@ -1,0 +1,25 @@
+.box-little{
+    border: 1px solid #999999;
+    padding: 5px;
+    text-align: center;
+    min-width: 94px;
+    & p{
+       font-weight: 400;
+       font-size: 18px;
+       line-height: 18px;
+       margin-bottom: 5px;
+    }
+    & span{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #009EFF;
+    }
+    &--blue{
+        border: 1px solid #009EFF;
+        background-color: #009EFF;
+        & p, span{
+            color: #fff;
+        }
+    }
+}
