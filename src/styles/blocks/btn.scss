@@ -7,5 +7,45 @@
     line-height: 16px;
     text-align: center;
     padding: 5px 15px;
-    min-width: 105px;
+    width: 105px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+    &:hover{
+        background-color: #6ACD68;
+        color: #fff;
+        transition: all .3s;
+    }
+}
+
+.btn-blue{
+    border: none;
+    background-color: #009EFF;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    min-width: 150px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    &--radius{
+        border-radius: 4px;
+    }
+}
+
+@media (min-width:1376px) {
+    .btn-blue{
+        &--radius{
+            border-radius: 0;
+            background-color: #fff;
+            border: 1px solid #C6C6C6;
+            color: #C6C6C6;
+            transition: all .3s;
+            &:hover{
+                border-color: #009EFF;
+                background-color: #009EFF;
+                color: #fff;
+            }
+        }
+    }
 }

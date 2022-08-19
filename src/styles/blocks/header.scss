@@ -3,15 +3,12 @@
     & .container{
         padding: 0 15px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between; 
     }
     
     & .header__nav{
         display: none;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: #fff;
     }
     & .header__icons{
         display: flex;
@@ -25,5 +22,27 @@
     }
     & .logo{
         margin-left: 13%;
+    }
+}
+
+@media (max-width:1375px) {
+    .header{
+        & .header__nav{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+        }
+    }
+}
+@media (min-width:1376px) {
+    .header{
+        & .header__nav{
+            display: block;
+        }
+        & .logo{
+            margin-left: 0;
+
+        }
     }
 }

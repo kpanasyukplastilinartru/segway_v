@@ -5,7 +5,14 @@
     flex-wrap: wrap;
     padding: 15px 0;
     border: 5px solid #99999960;
-    & h4{
+    margin-bottom: 25px;
+    & .box-grey__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    & .box-grey__title{
         width: 100%;
         font-weight: 400;
         font-size: 18px;
@@ -23,12 +30,64 @@
         line-height: 46px;
         text-align: center;
         margin: 19px 0;
+        width: 100%;
         & span{
             font-weight: 300;
             font-size: 22px;
             line-height: 27px;
             display: block;
             text-decoration: line-through;
+        }
+    }
+}
+
+@media (min-width:1376px) {
+    .box-grey{
+        padding: 23px 20px;
+        & .box-grey__box{
+            width: 100%;
+            justify-content: flex-start;
+        }
+        & .box-grey__title{
+            text-align: left;
+            padding: 0;
+        }
+        & .box-grey__price{
+            width: fit-content;
+            text-align: left;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        & .box-blue--desctop{
+            border: none;
+            width: 60%;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0;
+            padding: 0 15px;
+            & .box-blue__text{
+                padding-left: 20px;
+                & h4{
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #009eff;
+                    text-transform: none;
+                    text-align: left;
+                    max-width: 200px;
+                }
+                & p{
+                    display: none;
+                }
+            }
+            & .box-blue__img{
+                transform: rotate(90deg);
+            }
+        }
+        & .btn-blue{
+            flex-grow: 1;
+            padding: 16px;
         }
     }
 }

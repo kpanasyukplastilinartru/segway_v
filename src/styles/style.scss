@@ -21,6 +21,9 @@ flex-direction: column;
 
 .container{
     padding: 0 10px;
+    &--padding{
+        padding: 0 0 0 10px;
+    }
 }
 @media (min-width: 768px){
     .container{
@@ -28,16 +31,17 @@ flex-direction: column;
         margin: 0 auto;
     }
 }
-@media (min-width: 1366px){
+@media (min-width: 1376px){
     .container{
-    width: 1296px;
+    width: 987px;
+    padding: 0 15px;
     }
 }
-@media (min-width: 1920px){
+/* @media (min-width: 1920px){
     .container{
     width: 1500px;
     }
-}
+} */
 
 .main-wrapp{
     &.shadow{

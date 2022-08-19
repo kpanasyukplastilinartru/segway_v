@@ -1,0 +1,161 @@
+.c{
+    background-color: #9999993a;
+    padding: 55px 0 20px;
+    & .c__picture{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+    & .c__img{
+        &--box{
+            background-color: #F7F7F7;
+            border: 5px solid  #009EFF;
+            position: relative;
+            margin-left: 10%;
+            margin-right: 10px;
+            margin-bottom: 71px;
+            padding: 11px 0;
+            min-height: 94px;
+            & img{
+                position: absolute;
+                left: -35px;
+                top: -30px;
+            }
+            & p{
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 31px;
+                margin-left: 30%;
+                text-transform: uppercase;
+            }
+        }
+        
+        &--big{
+            width: 220px;
+            height: 140px;
+            margin: 0 auto 25px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            } 
+        }
+        
+    }
+    & .c__text{
+        max-width: 274px;
+        margin: 0 auto 82px;
+        & h3{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        & p{
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+    & .c__tabs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    & .c__tab{
+        padding: 12px 21px;
+        width: 25%;
+        & p{
+            display: none;
+            color: #999999;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        & svg{
+            margin: 0 auto;
+            display: block;
+        }
+        & svg g path{
+            fill: #009EFF;
+            &#grey{
+                fill:#999999;
+            }
+        }
+        &--blue{
+            background-color:  #009EFF;
+            & svg g path{
+                fill: #fff;
+                &#grey{
+                    fill:#fff;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1376px) {
+    .c{
+        background-color: #fff;
+        & .container{
+            display: flex;
+            flex-direction: column;
+            & .c__tabs{
+                order: -1;
+            }
+        }
+        & .c__picture{
+            background-color: #9999993a;
+            &.active{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 27px 22px;
+                & .c__img{
+                    order: 2;
+                    margin: 0;
+                }
+                & .c__text{
+                    margin: 0;
+                    max-width: 530px;
+                    & h3, p{
+                        text-align: left;
+                    }
+                    
+                }
+            }
+            & .c__img--box{
+                border: none;
+                background-color: transparent;
+                padding: 0;
+                & p{
+                    display: none;
+                }
+                & img{
+                    position: static;
+                }
+            }
+        }
+        & .c__tab{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            & p{
+                display: block;
+            }
+            & svg{
+                flex: 0 0 auto;
+            }
+            &--blue{
+                & p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -31,3 +31,21 @@
         }
     }
 }
+
+@media (max-width:1375px) {
+    .box-blue{
+        &--desctop{
+            display: none;
+        }
+    }
+}
+@media (min-width:1375px) {
+    .box-blue{
+        &--desctop{
+            display: flex;
+        }
+        &--mobile{
+            display: none;
+        }
+    }
+}
